@@ -1,0 +1,42 @@
+
+/* Mobile (max-width: 768px): 1 × 9 (full width cards) */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+      }
+    
+}
+
+/* Tablet (min-width: 768px): 2 × 4 (50% width cards, last card is full width) */
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    
+  }
+  .card {
+    width: 49%;
+  }
+
+  ul :last-child{
+    width: 100%;
+  }    
+}
+
+/* Desktop (min-width: 1200px): 3 × 3 (33% width cards) */
+@media screen and (min-width: 1200px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px 15px;
+  }
+
+  .card{
+    width: 100%;
+  }
+    
+}
