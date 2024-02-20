@@ -12,18 +12,18 @@
   .card-container {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 15px;
-    
+    gap: 15px;
   }
+
   .card {
     width: 49%;
   }
 
   ul :last-child{
     width: 100%;
-  }    
+  } 
+  
 }
 
 /* Desktop (min-width: 1200px): 3 × 3 (33% width cards) */
